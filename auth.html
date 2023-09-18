@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title> Cursed Conclave</title>
+  <!-- Add the font import for Teko -->
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      font-family: 'Teko', Arial, sans-serif; /* Use Teko font first, fallback to Arial, and then to sans-serif */
+    }
+    .wrapper {
+      max-width: 400px;
+      margin: 0 auto;
+      padding-top: 100px;
+      animation: fadeIn 1s;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      background-color: #1e1e1e;
+    }
+    .card-body {
+      padding: 30px;
+      text-align: center; /* Center align the text inside the card body */
+    }
+    .card-title {
+      font-size: 48px; /* Increase the font size for the title */
+      font-weight: bold;
+      color: #f57c00;
+      margin-bottom: 30px;
+      font-family: 'Teko', Arial, sans-serif; /* Use Teko font for card titles */
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-group input[type="password"] {
+      border: none;
+      border-bottom: 2px solid #f57c00;
+      border-radius: 0;
+      box-shadow: none;
+      background-color: transparent;
+      color: #ffffff;
+      transition: border-color 0.3s;
+      font-size: 18px;
+      padding: 10px 0;
+      text-align: center; /* Center the placeholder text horizontally */
+      line-height: 36px; /* Set the line height to match the input field height for vertical centering */
+    }
+
+    .form-group input[type="password"]:focus {
+      border-color: #f57c00;
+      box-shadow: none;
+    }
+
+    .form-group input[type="submit"] {
+      background-color: #f57c00;
+      border: none;
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .form-group input[type="submit"]:hover {
+      background-color: #f36c00;
+      cursor: pointer;
+    }
+
+    .alert-danger {
+      color: #e74c3c;
+      margin-top: 10px;
+    }
+
+    /* Updated styles for the link */
+    .link-style {
+      color: #f57c00;
+      text-decoration: underline;
+      display: block;
+      margin-top: 10px;
+      font-size: 16px;
+    }
+
+    .link-style:hover {
+      color: #f36c00;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="wrapper">
+    <div class="card">
+      <div class="card-body">
+        <h2 class="card-title">Cursed Conclave</h2>
+        <h2 class="mt-4">Welcome</h2>
+        <p>Please Enter The Password</p>
+        <form method="POST" id="login-form" class="signup-form" action="/login">
+          <div class="form-group">
+            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+          </div>
+          <div class="form-group">
+            <input type="submit" name="login" id="login" class="btn btn-info" value="GET-IN">
+          </div>
+        </form>
+        <a href="https://t.me/TheCursedConclave" target="_blank" class="link-style">GET PASS FROM HERE</a>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
